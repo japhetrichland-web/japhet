@@ -1,0 +1,83 @@
+/* Animations personnalisées */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+}
+
+/* Styles pour les éléments de projet */
+.project-item {
+    transition: all 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Styles pour la navigation mobile */
+#mobile-menu {
+    transition: all 0.3s ease;
+}
+
+/* Styles pour les boutons de filtre */
+.filter-btn.active {
+    background-color: #7B2CBF;
+    color: white;
+}
+
+/* Styles pour les barres de progression */
+.progress-bar {
+    transition: width 0.5s ease-in-out;
+}
+
+/* Amélioration du scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Styles pour les formulaires */
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    ring: 2px solid #7B2CBF;
+}
+
+/* Styles pour les cartes */
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-text {
+        font-size: 2.5rem;
+    }
+}
